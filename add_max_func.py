@@ -20,3 +20,11 @@ def max_of(*a):
     return max_value
 print(max_of(43,23,55,22,456,3,5335,34))
 print(max_of(32,23,45,33,1,99,102,33))
+print("-----------------")
+def my_function(username, **details):#if *details is posstional arguments, it take tuples, but we given key,value 
+#we need to provide **details
+  print("Username:", username)
+  print("Additional details:")
+  for key, value in details.items():
+    print(" ", key + ":", value)
+my_function("emil123", age = "25", city = "Oslo", hobby = "coding")
