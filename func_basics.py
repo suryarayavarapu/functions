@@ -28,12 +28,14 @@ print(msg)
 
 def add_of_2(a,b):
     sum =a + b
+    print(b)
     return sum
-addition= add_of_2(2,3)
+addition= add_of_2(3,b=9)
 print(addition)
 
-def full_name(name):
+def full_name(name="ravi"): # it will take ravi when func calling has no arguments
     complete_name=name+" Rayavarapu"
     print(name,"kiran")
     return complete_name
 print(full_name("surya"))
+print(full_name())
